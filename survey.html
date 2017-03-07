@@ -2,91 +2,99 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <title>Digital Survey</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
+    <meta charset="UTF-8">
+    <title>Digital Survey</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
 </head>
 
 <body>
-      <form id="survey" name="digitalSurvey">
-            <h1>1. What is your past experience with technology?</h1>
-            <label>
-                  <input type="radio" name="q1" id="1" value="1"> Male
-                  <br>
-            </label>
-            <label>
-                  <input type="radio" name="q1" id="2" value="2"> Female
-                  <br>
-            </label>
-            <label>
-                  <input type="radio" name="q1" id="3" value="3"> Other
-                  <br>
-            </label>
-            <label>
-                  <input type="radio" name="q1" id="4" value="4"> Other
-                  <br>
-            </label>
 
-            <h1>3. How hard is technology to use?</h1>
-            <label>
-                  <input type="radio" name="q2" id="5" value="1"> Male
-            </label>
-            <label>
-                  <input type="radio" name="q2" id="6" value="2"> Female
-            </label>
-            <label>
-                  <input type="radio" name="q2" id="7" value="3"> Other
-            </label>
-            <label>
-                  <input type="radio" name="q2" id="8" value="4"> Other
-            </label>
+    <form id="survey" name="digitalSurvey">
+        <h1>1. What is your past experience with technology?</h1>
+        <label>
+            <input type="radio" name="q1" id="1" value="a"> I have not used any technology at all
+            <br>
+        </label>
+        <label>
+            <input type="radio" name="q1" id="2" value="b"> I have tried using some basic technology
+            <br>
+        </label>
+        <label>
+            <input type="radio" name="q1" id="3" value="c"> I have used technology at work and in my personal life
+            <br>
+        </label>
+        <label>
+            <input type="radio" name="q1" id="4" value="d"> I have extensive experience working with technology in a technical field
+            <br>
+        </label>
 
-            <h1>10. Select all the terms or concepts that you understand fully.</h1>
-            <label>
-                  <input type="checkbox" name="q3" id="1" value="1"> Male
-            </label>
-            <label>
-                  <input type="checkbox" name="q3" id="2" value="2"> Female
-            </label>
-            <label>
-                  <input type="checkbox" name="q3" id="3" value="3"> Other
-            </label>
-            <label>
-                  <input type="checkbox" name="q3" id="4" value="4"> Other
-            </label>
-            <hr>
-            <input type="submit" value="Submit">
-      </form>
-      <script>
+        <h1>3. How hard is technology to use?</h1>
+        <label>
+            <input type="radio" name="q2" id="5" value="a"> Impossible
+        </label>
+        <label>
+            <input type="radio" name="q2" id="6" value="b"> 2
+        </label>
+        <label>
+            <input type="radio" name="q2" id="7" value="c"> 3
+        </label>
+        <label>
+            <input type="radio" name="q2" id="8" value="d"> Easy and intuitive
+        </label>
 
-      $('#survey').submit(function(e) {
-      		// prevent page refresh on submit
-            e.preventDefault();
-            console.log("Form submitted");
+        <h1>10. Select all the terms or concepts that you understand fully.</h1>
+        <label>
+            <input type="checkbox" name="q3" id="1" value="a"> wifi
+        </label>
+        <label>
+            <input type="checkbox" name="q3" id="2" value="b"> mouse
+        </label>
+        <label>
+            <input type="checkbox" name="q3" id="3" value="c"> swipe
+        </label>
+        <label>
+            <input type="checkbox" name="q3" id="4" value="d"> download
+        </label>
+        <hr>
+        <input type="submit" value="Submit">
+    </form>
 
-            
-      });
+    <section id="results">
+    </section>
 
-      // TO DO: form validation, check all question answered
-      // $(function() {
-      //       $("form[name='digitalSurvey']").validate({
-      //             rules: {
-      //                   q1: "required",
-      //                   q2: "required"
-      //             },
-      //             // Specify validation error messages
-      //             messages: {
-      //                   q1: "Please enter your firstname",
-      //                   q2: "Please enter your lastname"
-      //             },
-      //             submitHandler: function(form) {
-      //                   form.submit();
-      //             }
-      //       });
-      // });
+    <script>
+    $("#survey").on("submit", function(event) {
+        event.preventDefault();
+        console.log("Processing data");
+        // get all survey values and convert to js object
+        var answers = $(this).serializeArray();
+        $("#results").empty();
 
-      </script>
+        jQuery.each(answers, function(i, answer) {
+            $("#results").append(answer.value + " ");
+        });
+
+    });
+    // TO DO: form validation, check all question answered
+    // $(function() {
+    //       $("form[name='digitalSurvey']").validate({
+    //             rules: {
+    //                   q1: "required",
+    //                   q2: "required"
+    //             },
+    //             // Specify validation error messages
+    //             messages: {
+    //                   q1: "Please enter your firstname",
+    //                   q2: "Please enter your lastname"
+    //             },
+    //             submitHandler: function(form) {
+    //                   form.submit();
+    //             }
+    //       });
+    // });
+
+    </script>
 </body>
 
 </html>
