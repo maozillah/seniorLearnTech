@@ -2,6 +2,7 @@
   "questions": [
     {
       "question": "What is your past experience with technology?",
+      "name" : "q1",
       "quesType": "radio",
       "Category": "attitude",
       "eg": "",

@@ -23,16 +23,17 @@
     <section id="results">
     </section>
 
-    <script id="handlebars-demo" type="text/x-handlebars-template">
+    <script id="survey-ques" type="text/x-handlebars-template">
         {{#each questions}}
 
-        <h1>{{question}}</h1> {{#each answers}}
+        <h1>{{counter @index}}. {{question}}</h1> {{#each answers}}
         <label>
-            <input type="{{../quesType}}" name="q1" id="1" value="{{value}}"> {{answer}}
+            <input type="{{../quesType}}" name="{{../name}}" id="1" value="{{value}}"> {{answer}}
             <br>
         </label>
         {{/each}} {{/each}}
 
+        <hr/>
         <input type="submit" value="Submit">
     </script>
 
@@ -46,7 +47,7 @@
         var answers = $(this).serializeArray();
         $("#results").empty();
         $.each(answers, function(i, answer) {
-            $("#results").append(answer.value + " ");
+            $("#results").append("Your results are" + " " + answer.value + " ");
         });
     });
     // TO DO: form validation, check all question answered

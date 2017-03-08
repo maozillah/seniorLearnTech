@@ -1,6 +1,6 @@
 {{#each questions}}
 
- 	<h1>{{question}}</h1>
+ 	<h1>{{counter @index}}. {{question}}</h1>
 
 	{{#each answers}}
  	 <label>
@@ -11,4 +11,5 @@
 
 {{/each}}
 
+<hr/>
 <input type="submit" value="Submit">
