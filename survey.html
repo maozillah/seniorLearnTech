@@ -25,7 +25,6 @@
 
     <script id="survey-ques" type="text/x-handlebars-template">
         {{#each questions}}
-
         <h1>{{counter @index}}. {{question}}</h1> {{#each answers}}
         <label>
             <input type="{{../quesType}}" name="{{../name}}" id="1" value="{{value}}"> {{answer}}
@@ -47,7 +46,7 @@
         var answers = $(this).serializeArray();
         $("#results").empty();
         $.each(answers, function(i, answer) {
-            $("#results").append("Your results are" + " " + answer.value + " ");
+            $("#results").append(answer.value + " ");
         });
     });
     // TO DO: form validation, check all question answered
