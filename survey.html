@@ -11,7 +11,7 @@
     <!-- <script src="libraries/handlebars.runtime-v4.0.5.js"></script> -->
     <!-- <script src="templatesCompiled.js"></script> -->
 
-    <!-- validation -->
+    <!-- form validation -->
     <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
 </head>
 
@@ -44,11 +44,43 @@
         console.log("Processing data");
         // get all survey values and convert to js object
         var answers = $(this).serializeArray();
-        $("#results").empty();
-        $.each(answers, function(i, answer) {
-            $("#results").append(answer.value + " ");
-        });
+        processResults(answers);
     });
+
+    function processResults(answers) {
+
+        var counts = {};
+        var result;
+
+        // count number of answers
+        $.each(answers, function(i, answer) {
+            counts[answer.value] = (counts[answer.value] || 0) + 1;
+        });
+        // surface most selected value
+        var topAns = Object.keys(counts).reduce(function(a, b) {
+            return counts[a] > counts[b] ? a : b
+        });
+
+        console.log(counts);
+
+        switch (topAns) {
+            case "a":
+            	result = "Beginner";
+            break;
+            case "b":
+            	result = "Novice";
+            break;
+            case "c":
+            	result = "Intermediate";
+            break;
+            case "d":
+            	result = "Beyond intermediate";
+            break;
+        }
+
+        $("#results").empty();
+        $("#results").append("<h1> You are " + result + "!</h1>");
+    }
     // TO DO: form validation, check all question answered
     // $(function() {
     //       $("form[name='digitalSurvey']").validate({
