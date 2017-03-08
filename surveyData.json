@@ -1,0 +1,10 @@
+{
+  "occupation" : "developer",
+  "website" : {
+    "name" : "sitepoint"
+  },
+  "names" : [
+    {"firstName" : "Ritesh", "lastName" : "Kumar"},
+    {"firstName" : "John" , "lastName" : "Doe"}
+  ]
+}

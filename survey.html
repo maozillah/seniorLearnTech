@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>Digital Survey</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="libraries/handlebars-v4.0.5.js"></script> -->
+    <script src="libraries/handlebars.runtime-v4.0.5.js"></script>
+	<script src="templatesCompiled.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
 </head>
 
@@ -63,6 +66,8 @@
     <section id="results">
     </section>
 
+ <script src="scripts/HBtemplates.js"></script>
+
     <script>
     $("#survey").on("submit", function(event) {
         event.preventDefault();
@@ -70,11 +75,9 @@
         // get all survey values and convert to js object
         var answers = $(this).serializeArray();
         $("#results").empty();
-
-        jQuery.each(answers, function(i, answer) {
+        $.each(answers, function(i, answer) {
             $("#results").append(answer.value + " ");
         });
-
     });
     // TO DO: form validation, check all question answered
     // $(function() {
