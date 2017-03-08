@@ -1,10 +1,28 @@
 {
-  "occupation" : "developer",
-  "website" : {
-    "name" : "sitepoint"
-  },
-  "names" : [
-    {"firstName" : "Ritesh", "lastName" : "Kumar"},
-    {"firstName" : "John" , "lastName" : "Doe"}
+  "questions": [
+    {
+      "question": "What is your past experience with technology?",
+      "quesType": "radio",
+      "Category": "attitude",
+      "eg": "",
+      "answers": [
+        {
+          "answer": "I have not used any technology at all",
+          "value" : "a"
+        },
+        {
+          "answer": "I have tried using some basic technology",
+          "value" : "b"
+        },
+        {
+          "answer": "I have used technology at work and in my personal life",
+          "value" : "c"
+        },
+        {
+          "answer": "I have extensive experience working with technology in a technical field",
+          "value" : "d"
+        }
+      ]
+    }
   ]
 }

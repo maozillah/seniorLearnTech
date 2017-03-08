@@ -9,76 +9,34 @@
 
     <!-- optimize handlebars later -->
     <!-- <script src="libraries/handlebars.runtime-v4.0.5.js"></script> -->
-	<!-- <script src="templatesCompiled.js"></script> -->
+    <!-- <script src="templatesCompiled.js"></script> -->
 
-	<!-- validation -->
+    <!-- validation -->
     <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
 </head>
 
 <body>
 
     <form id="survey" name="digitalSurvey">
-        <h1>1. What is your past experience with technology?</h1>
-        <label>
-            <input type="radio" name="q1" id="1" value="a"> I have not used any technology at all
-            <br>
-        </label>
-        <label>
-            <input type="radio" name="q1" id="2" value="b"> I have tried using some basic technology
-            <br>
-        </label>
-        <label>
-            <input type="radio" name="q1" id="3" value="c"> I have used technology at work and in my personal life
-            <br>
-        </label>
-        <label>
-            <input type="radio" name="q1" id="4" value="d"> I have extensive experience working with technology in a technical field
-            <br>
-        </label>
-
-        <h1>3. How hard is technology to use?</h1>
-        <label>
-            <input type="radio" name="q2" id="5" value="a"> Impossible
-        </label>
-        <label>
-            <input type="radio" name="q2" id="6" value="b"> 2
-        </label>
-        <label>
-            <input type="radio" name="q2" id="7" value="c"> 3
-        </label>
-        <label>
-            <input type="radio" name="q2" id="8" value="d"> Easy and intuitive
-        </label>
-
-        <h1>10. Select all the terms or concepts that you understand fully.</h1>
-        <label>
-            <input type="checkbox" name="q3" id="1" value="a"> wifi
-        </label>
-        <label>
-            <input type="checkbox" name="q3" id="2" value="b"> mouse
-        </label>
-        <label>
-            <input type="checkbox" name="q3" id="3" value="c"> swipe
-        </label>
-        <label>
-            <input type="checkbox" name="q3" id="4" value="d"> download
-        </label>
-        <hr>
-        <input type="submit" value="Submit">
     </form>
 
     <section id="results">
     </section>
 
     <script id="handlebars-demo" type="text/x-handlebars-template">
-This article is available on {{website.name}}.<br>
+        {{#each questions}}
 
-{{#each names}}
-	I am a {{../occupation}}. My name is {{firstName}} {{lastName}}.<br>
-{{/each}}
-</script>
+        <h1>{{question}}</h1> {{#each answers}}
+        <label>
+            <input type="{{../quesType}}" name="q1" id="1" value="{{value}}"> {{answer}}
+            <br>
+        </label>
+        {{/each}} {{/each}}
 
- 	<script src="scripts/HBtemplates.js"></script>
+        <input type="submit" value="Submit">
+    </script>
+
+    <script src="scripts/HBtemplates.js"></script>
 
     <script>
     $("#survey").on("submit", function(event) {

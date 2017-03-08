@@ -1,31 +1,15 @@
 // asynchronous call
-// $.getJSON("../surveyData.json", function(json) {
-//     var context = json;
 
-//     var templateScript = Handlebars.templates.demo(context);
 
-//     $(document.body).append(templateScript);
-// });
+$.getJSON("../surveyData.json", function(json) {
+    
+    var template = $('#handlebars-demo').html();
 
-//Retreive the template data from the HTML .
-var template = $('#handlebars-demo').html();
+    var context = json;
 
-var context = {
-  "occupation" : "developer",
-  "website" : {
-    "name" : "sitepoint"
-  },
-  "names" : [
-    {"firstName" : "Ritesh", "lastName" : "Kumar"},
-    {"firstName" : "John" , "lastName" : "Doe"}
-  ]
-}
+    var templateScript = Handlebars.compile(template);
 
-//Compile the template data into a function
-var templateScript = Handlebars.compile(template);
+    var html = templateScript(context);
 
-var html = templateScript(context);
-//html = 'My name is Ritesh Kumar . I am a developer.'
-
-$(document.body).append(html);
-
+    $("#survey").append(html);
+});
