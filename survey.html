@@ -7,10 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="libraries/handlebars-v4.0.5.js"></script>
 
-    <!-- optimize handlebars later -->
-    <!-- <script src="libraries/handlebars.runtime-v4.0.5.js"></script> -->
-    <!-- <script src="templatesCompiled.js"></script> -->
-
     <!-- form validation -->
     <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
 </head>
@@ -19,9 +15,6 @@
 
     <form id="survey" name="digitalSurvey">
     </form>
-
-    <section id="results">
-    </section>
 
     <script id="survey-ques" type="text/x-handlebars-template">
         {{#each questions}}
@@ -36,70 +29,8 @@
         <input type="submit" value="Submit">
     </script>
 
-    <script src="scripts/HBtemplates.js"></script>
+    <script src="scripts/quiz.js"></script>
 
-    <script>
-    $("#survey").on("submit", function(event) {
-        event.preventDefault();
-        console.log("Processing data");
-        // get all survey values and convert to js object
-        var answers = $(this).serializeArray();
-        processResults(answers);
-    });
-
-    function processResults(answers) {
-
-        var counts = {};
-        var result;
-
-        // count number of answers
-        $.each(answers, function(i, answer) {
-            counts[answer.value] = (counts[answer.value] || 0) + 1;
-        });
-        // surface most selected value
-        var topAns = Object.keys(counts).reduce(function(a, b) {
-            return counts[a] > counts[b] ? a : b
-        });
-
-        console.log(counts);
-
-        switch (topAns) {
-            case "a":
-            	result = "Beginner";
-            break;
-            case "b":
-            	result = "Novice";
-            break;
-            case "c":
-            	result = "Intermediate";
-            break;
-            case "d":
-            	result = "Beyond intermediate";
-            break;
-        }
-
-        $("#results").empty();
-        $("#results").append("<h1> You are " + result + "!</h1>");
-    }
-    // TO DO: form validation, check all question answered
-    // $(function() {
-    //       $("form[name='digitalSurvey']").validate({
-    //             rules: {
-    //                   q1: "required",
-    //                   q2: "required"
-    //             },
-    //             // Specify validation error messages
-    //             messages: {
-    //                   q1: "Please enter your firstname",
-    //                   q2: "Please enter your lastname"
-    //             },
-    //             submitHandler: function(form) {
-    //                   form.submit();
-    //             }
-    //       });
-    // });
-
-    </script>
 </body>
 
 </html>
