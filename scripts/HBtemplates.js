@@ -2,8 +2,10 @@ Handlebars.registerHelper("counter", function (index){
     return index + 1;
 });
 
-var jsonData = "https://maozillah.github.io/seniorLearnTech/surveyData.json";
-// var jsonData = "../surveyData.json";
+// var jsonData = "https://maozillah.github.io/seniorLearnTech/surveyData.json";
+
+// TO DO: udpated to QuizQues when I figure out how to integrate results
+var jsonData = "../json/surveyData.json";
 
 // asynchronous call
 $.getJSON(jsonData, function(json) {
