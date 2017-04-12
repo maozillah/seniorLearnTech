@@ -1,21 +1,19 @@
-var jsonData = "json/surveyData.json";
-
-$.getJSON(jsonData, function(json) {
-
-    // results template
-    var results = $('#survey-results').html();
-    var resultsScript = Handlebars.compile(results);
-    var html2 = resultsScript(json);
-    $("#results").append(html2);
-});
+var jsonData = "json/results.json";
 
 $(document).ready(function() {
     var retrievedObject = localStorage.getItem('quizAns');
-    var answers = JSON.parse(retrievedObject);
 
-    console.log(answers);
+    // test variables
+    var answers = [{"name":"q1","value":"c"},{"name":"q2","value":"a"},{"name":"q3","value":"c"}]; 
+    // var answers = JSON.parse(retrievedObject);
+
+    console.log(retrievedObject);
+
+    // console.log(answers);
 
     processResults(answers);
+
+    localStorage.removeItem("quizAns");
 });
 
 function processResults(answers) {
@@ -32,23 +30,33 @@ function processResults(answers) {
         return counts[a] > counts[b] ? a : b
     });
 
-    console.log(counts);
-
+    // console.log(counts);
     switch (topAns) {
         case "a":
-            result = "Beginner";
+            result = 0;
             break;
         case "b":
-            result = "Novice";
+            result = 1;
             break;
         case "c":
-            result = "Intermediate";
+            result = 2;
             break;
         case "d":
-            result = "Beyond intermediate";
+            result = 3;
             break;
     }
 
-    $("#results").empty();
-    $("#results").append("<h1> You are " + result + "!</h1>");
+    $.getJSON(jsonData, function(json) {
+
+        // results template
+        var results = $('#survey-results').html();
+
+        // select result that matches stage
+        var resultsScript = Handlebars.compile(results);
+
+
+        var html2 = resultsScript(json.results[result]);
+        // var html2 = resultsScript(json);
+        $("#results").append(html2);
+    });
 }

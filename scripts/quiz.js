@@ -4,7 +4,8 @@ Handlebars.registerHelper("counter", function(index) {
 });
 
 // var jsonData = "https://maozillah.github.io/seniorLearnTech/surveyData.json";
-var jsonData = "json/surveyData.json";
+// var jsonData = "json/surveyData.json";
+var jsonData = "json/quizQues.json";
 
 // asynchronous call
 $.getJSON(jsonData, function(json) {
@@ -26,11 +27,6 @@ $("#survey").on("submit", function(event) {
     localStorage.setItem('quizAns', JSON.stringify(answers));
     window.open("results.html", "_self");
 
-    //
-    // processResults(answers);
-    // console.log(answers);
-
-    // window.location = 'results.html';
 });
 // TO DO: form validation, check all question answered
 // $(function() {

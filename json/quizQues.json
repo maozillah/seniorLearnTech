@@ -1,85 +1,65 @@
 {
-  "questions": [
-    {
-      "question": "What is your past experience with technology?",
-      "name" : "q1",
-      "quesType": "radio",
-      "Category": "attitude",
-      "eg": "",
-      "answers": [
-        {
-          "answer": "I have not used any technology at all",
-          "value" : "a"
+    "questions": [{
+            "question": "What is your past experience with technology?",
+            "name": "q1",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "I have not used any technology at all",
+                "value": "a"
+            }, {
+                "answer": "I have tried using some basic technology",
+                "value": "b"
+            }, {
+                "answer": "I have used technology at work and in my personal life",
+                "value": "c"
+            }, {
+                "answer": "I have extensive experience working with technology in a technical field",
+                "value": "d"
+            }]
         },
-        {
-          "answer": "I have tried using some basic technology",
-          "value" : "b"
-        },
-        {
-          "answer": "I have used technology at work and in my personal life",
-          "value" : "c"
-        },
-        {
-          "answer": "I have extensive experience working with technology in a technical field",
-          "value" : "d"
-        }
-      ]
-    },
 
-    {
-      "question": "How hard is technology to use?",
-      "name" : "q2",
-      "quesType": "radio",
-      "Category": "attitude",
-      "eg": "",
-      "answers": [
         {
-          "answer": "Impossible",
-          "value" : "a"
+            "question": "How hard is technology to use?",
+            "name": "q2",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "Impossible",
+                "value": "a"
+            }, {
+                "answer": "2",
+                "value": "b"
+            }, {
+                "answer": "3",
+                "value": "c"
+            }, {
+                "answer": "Easy and intuitive",
+                "value": "d"
+            }]
         },
-        {
-          "answer": "2",
-          "value" : "b"
-        },
-        {
-          "answer": "3",
-          "value" : "c"
-        },
-        {
-          "answer": "Easy and intuitive",
-          "value" : "d"
-        }
-      ]
-    },
 
-    {
-      "question": "Select all the terms or concepts that you understand fully.",
-      "name" : "q3",
-      "quesType": "checkbox",
-      "Category": "attitude",
-      "eg": "",
-      "answers": [
         {
-          "answer": "wifi",
-          "value" : "a"
-        },
-        {
-          "answer": "wifi",
-          "value" : "b"
-        },
-        {
-          "answer": "wifi",
-          "value" : "c"
-        },
-        {
-          "answer": "wifi",
-          "value" : "d"
+            "question": "Select all the terms or concepts that you understand fully.",
+            "name": "q3",
+            "quesType": "checkbox",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "wifi",
+                "value": "a"
+            }, {
+                "answer": "wifi",
+                "value": "b"
+            }, {
+                "answer": "wifi",
+                "value": "c"
+            }, {
+                "answer": "wifi",
+                "value": "d"
+            }]
         }
-      ]
-    }
-  ],
-  // started writing results but doesn't have anything to deal with it so it breaks
-  "results": [
-    {"question": "What is your past experience with technology?",}
-  ]
+    ]
 }

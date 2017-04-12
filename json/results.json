@@ -1,0 +1,167 @@
+{
+    "results": [{
+        "stage": "Complete Beginner",
+        "header": "You have a great relationship with technology!",
+        "description": "[language TBD] This is where everyone aspires to be. You've put in the hard work and should be proud of how much you've learned. Most older adults are content here. There's no need to improve unless you're interested.",
+        "growth": [{
+            "area": "Attitude",
+            "details": "[language TBD] You could..."
+        }],
+        "resources": [{
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }, {
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }],
+        "topics": [{
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }]
+    }, {
+        "stage": "Novice",
+        "header": "You have a great relationship with technology!",
+        "description": "[language TBD] This is where everyone aspires to be. You've put in the hard work and should be proud of how much you've learned. Most older adults are content here. There's no need to improve unless you're interested.",
+        "growth": [{
+            "area": "Attitude",
+            "details": "[language TBD] You could..."
+        }],
+        "resources": [{
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }, {
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }],
+        "topics": [{
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }]
+    }, {
+        "stage": "Intermediate",
+        "header": "You have a great relationship with technology!",
+        "description": "[language TBD] This is where everyone aspires to be. You've put in the hard work and should be proud of how much you've learned. Most older adults are content here. There's no need to improve unless you're interested.",
+        "growth": [{
+            "area": "Attitude",
+            "details": "[language TBD] You could..."
+        }],
+        "resources": [{
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }, {
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }],
+        "topics": [{
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }]
+    }, {
+        "stage": "Beyond Intermediate",
+        "header": "You have a great relationship with technology!",
+        "description": "[language TBD] This is where everyone aspires to be. You've put in the hard work and should be proud of how much you've learned. Most older adults are content here. There's no need to improve unless you're interested.",
+        "growth": [{
+            "area": "Attitude",
+            "details": "[language TBD] You could..."
+        }],
+        "resources": [{
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }, {
+            "ResType": "Group workshops",
+            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "illustration": "",
+            "where": [{
+                "location": "Senior recreation centre",
+                "url": ""
+            }, {
+                "location": "Library",
+                "url": "http://www.google.ca"
+            }]
+        }],
+        "topics": [{
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }, {
+            "topic": "Advanced internet usage",
+            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+        }]
+    }]
+}
