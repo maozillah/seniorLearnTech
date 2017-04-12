@@ -15,12 +15,55 @@
 
     <script id="survey-results" type="text/x-handlebars-template">
 
-        <h1></h1>{{stage}}
+        <div id="stage">
+            <h1>TEST/REMOVE: {{stage}}</h1>
+            <h1>{{tagline}}</h1>
+            <p>{{description}}</p>
 
+            <div id="stageContext">
+                circles
+            </div>
+        </div>
 
-        <h1>Areas of Growth</h1>
-        <h1>Best Ways for You to Learn</h1>
-        <h1>Topics that may Interest You</h1>
+        <div id="learning">
+
+            <div id="growth">
+                <h1>Areas of Growth</h1> {{#each growth}}
+                <h2>{{area}} </h2>
+                <p> {{details}} </p>
+                {{/each}}
+            </div>
+
+            <div id="resources">
+                <h1>Best Ways for You to Learn</h1> {{#each resources}}
+                <img src="{{illustration}}" alt="">
+                <h2>{{ResType}} </h2>
+                <p> {{details}} </p>
+
+                {{#each where}} {{#if url}}
+                <p><a href="{{url}}" target="_blank">{{location}}</a></p>
+                {{else}}
+                <p>{{location}}</p>
+                {{/if}} {{/each}} 
+
+                {{#unless @last}} 
+                   <hr>
+                {{/unless}} 
+                
+                {{/each}}
+            </div>
+
+            <div id="topics">
+                <h1>Topics that may Interest You</h1>
+                {{#each topics}} 
+
+                <h2>{{topic}}</h2>
+                <p>{{details}}</p>
+                {{/each}}
+            </div>
+        </div>
+
+        <hr>
 
         <div id="share">
             <h1>Share the Quiz</h1>
