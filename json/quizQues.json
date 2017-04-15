@@ -2,6 +2,7 @@
     "questions": [{
             "question": "What is your past experience with technology?",
             "name": "q1",
+            "id":"1",
             "quesType": "radio",
             "Category": "attitude",
             "eg": "",
@@ -23,6 +24,7 @@
         {
             "question": "How hard is technology to use?",
             "name": "q2",
+            "id":"2",
             "quesType": "radio",
             "Category": "attitude",
             "eg": "",
@@ -42,22 +44,23 @@
         },
 
         {
-            "question": "Select all the terms or concepts that you understand fully.",
+            "question": "How hard is technology to use?",
             "name": "q3",
-            "quesType": "checkbox",
+            "id":"3",
+            "quesType": "radio",
             "Category": "attitude",
             "eg": "",
             "answers": [{
-                "answer": "wifi",
+                "answer": "Impossible",
                 "value": "a"
             }, {
-                "answer": "wifi",
+                "answer": "2",
                 "value": "b"
             }, {
-                "answer": "wifi",
+                "answer": "3",
                 "value": "c"
             }, {
-                "answer": "wifi",
+                "answer": "Easy and intuitive",
                 "value": "d"
             }]
         }

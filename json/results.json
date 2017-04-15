@@ -11,7 +11,9 @@
             "ResType": "Group workshops",
             "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
             "illustration": "http://lorempixel.com/output/cats-q-c-100-100-3.jpg",
-            "where": [{
+            "where": [
+
+                {
                 "location": "Senior recreation centre",
                 "url": ""
             }, {

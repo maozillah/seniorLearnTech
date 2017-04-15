@@ -6,30 +6,74 @@
     <title>Digital Survey</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="libraries/handlebars-v4.0.5.js"></script>
-
+    <link rel="stylesheet" href="stylesheet/normalize.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
     <!-- form validation -->
     <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
 </head>
 
 <body>
 
-    <form id="survey" name="digitalSurvey">
-    </form>
+    <div class="container">
+        <h1>[Header] Don't know where to start?</h1>
+        <p>Answer 10 short questions to...</p>
+        <p>It’s free and requires no registration.</p>
+        <button onclick="openModal()">Get Started!</button>
+    </div>
+
+    <div class="proj-overlay" onclick="closeModal()"></div>
+
+        <div id="modal">
+
+            <div class="container">
+
+                <h1>Tech+Me Quiz</h1>
+                <div id="close" onclick="closeModal()">Exit X</div>
+
+                <form id="survey" name="digitalSurvey">
+                </form>
+            </div>
+        </div>
 
     <script id="survey-ques" type="text/x-handlebars-template">
         {{#each questions}}
-        <h1>{{counter @index}}. {{question}}</h1> {{#each answers}}
-        <label>
-            <input type="{{../quesType}}" name="{{../name}}" id="1" value="{{value}}"> {{answer}}
-            <br>
-        </label>
-        {{/each}} {{/each}}
+        
+
+        <div id="{{counter @index}}" class="question">
+            <h1>{{counter @index}}. {{question}}</h1> {{#each answers}}
+            <label>
+                <input type="{{../quesType}}" name="{{../name}}" id="{{../id}}" value="{{value}}"> {{answer}}
+                <br>
+            </label>
+            {{/each}}
+
+        </div>
+
+        {{/each}}
 
         <hr/>
         <input type="submit" value="Submit">
     </script>
-
     <script src="scripts/quiz.js"></script>
+
+    <script>
+    function openModal() {
+        // console.log(projID);
+        $("#modal").css("display", "block");
+        // $(".proj-overlay").css("display", "block");
+    }
+
+    function closeModal() {
+        $("#modal").css("display", "none");
+        // $(".proj-overlay").css("display", "none");
+    }
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            closeModal();
+        }
+    });
+
+    </script>
 
 </body>
 
