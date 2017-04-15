@@ -1,20 +1,60 @@
-/* line 19, style.scss */
+/* line 18, style.scss */
 html {
-  font-size: 16px;
+  font-size: 20px;
 }
 
-/* line 23, style.scss */
+/* line 22, style.scss */
 body {
-  font-family: "Roboto";
+  font-family: "freight-sans-pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
-/* line 27, style.scss */
+/* line 28, style.scss */
+h1 {
+  font-family: "bree-serif", serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0.4em;
+}
+
+/* line 35, style.scss */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3000;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  display: none;
+  background: #fff url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d79bf38627007.5809c7eab2bee.gif) no-repeat center center;
+}
+
+/* line 47, style.scss */
 .container {
   margin: 0 auto 0 auto;
   max-width: 960px;
 }
+/* line 50, style.scss */
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
 
-/* line 34, style.scss */
+/* line 58, style.scss */
+#results {
+  display: none;
+}
+
+/* line 63, style.scss */
+.question {
+  margin-bottom: 60px;
+}
+
+/* line 97, style.scss */
 #modal {
   position: absolute;
   width: 100%;

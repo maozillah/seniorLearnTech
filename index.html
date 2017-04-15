@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Survey</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="libraries/handlebars-v4.0.5.js"></script>
+    <link rel="stylesheet" href="stylesheet/normalize.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+    <script src="https://use.typekit.net/cgm6gob.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+
+    </script>
+    <!-- form validation -->
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+    <div class="container">
+        <h1>[Header] Don't know where to start?</h1>
+        <p>Answer 10 short questions to...</p>
+        <p>It’s free and requires no registration.</p>
+        <button onclick="openModal()">Get Started!</button>
+
+    </div>
+
+    <!-- <div class="proj-overlay" onclick="closeModal()"></div> -->
+
+    <!-- <div class="modal_wrapper"> -->
+
+    <div id="modal">
+
+        <div class="container">
+
+            <h1>Tech+Me Quiz</h1>
+            <div id="close" onclick="closeModal()">Exit X</div>
+
+            <form id="survey" name="digitalSurvey">
+            </form>
+
+            <section id="results">
+            </section>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <script id="survey-ques" type="text/x-handlebars-template">
+        {{#each questions}}
+
+        <div id="{{counter @index}}" class="question">
+            <h1>{{counter @index}}. {{question}}</h1> {{#each answers}}
+            <label>
+                <input type="{{../quesType}}" name="{{../name}}" id="{{../id}}" value="{{value}}"> {{answer}}
+                <br>
+            </label>
+            {{/each}}
+
+        </div>
+
+        {{/each}}
+
+        <hr/>
+        <input type="submit" value="Submit">
+    </script>
+    <script src="scripts/functionality.js"></script>
+
+    <script id="survey-results" type="text/x-handlebars-template">
+
+        <div id="stage">
+            <h1>TEST/REMOVE: {{stage}}</h1>
+            <h1>{{tagline}}</h1>
+            <p>{{description}}</p>
+
+            <div id="stageContext">
+                circles
+            </div>
+        </div>
+
+        <div id="learning">
+
+            <!--  <div id="growth">
+                <h1>Areas of Growth</h1> {{#each growth}}
+                <h2>{{area}} </h2>
+                <p> {{details}} </p>
+                {{/each}}
+            </div> -->
+
+            <div id="resources">
+                <h1>Best Ways for You to Learn</h1> {{#each resources}}
+                <img src="{{illustration}}" alt="">
+                <h2>{{ResType}} </h2>
+                <p> {{details}} </p>
+
+                {{#each where}} {{#if url}}
+                <p><a href="{{url}}" target="_blank">{{location}}</a></p>
+                {{else}}
+                <p>{{location}}</p>
+                {{/if}} {{/each}} {{#unless @last}}
+                <hr> {{/unless}} {{/each}}
+            </div>
+
+            <div id="topics">
+                <h1>Topics that may Interest You</h1> {{#each topics}}
+
+                <h2>{{topic}}</h2>
+                <p>{{details}}</p>
+                {{/each}}
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="share">
+            <h1>Share the Quiz</h1>
+            <p>Help other older adults discover the best way to learn to use technology.</p>
+            <ul>
+                <li>email the Quiz to a friend</li>
+                <li>share quiz on facebook</li>
+                <li>share quiz on twitter</li>
+            </ul>
+        </div>
+
+    </script>
+
+</body>
+
+</html>
+

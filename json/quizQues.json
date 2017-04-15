@@ -63,6 +63,48 @@
                 "answer": "Easy and intuitive",
                 "value": "d"
             }]
+        },
+         {
+            "question": "How hard is technology to use?",
+            "name": "q4",
+            "id":"4",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "Impossible",
+                "value": "a"
+            }, {
+                "answer": "2",
+                "value": "b"
+            }, {
+                "answer": "3",
+                "value": "c"
+            }, {
+                "answer": "Easy and intuitive",
+                "value": "d"
+            }]
+        },
+         {
+            "question": "How hard is technology to use?",
+            "name": "q5",
+            "id":"5",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "Impossible",
+                "value": "a"
+            }, {
+                "answer": "2",
+                "value": "b"
+            }, {
+                "answer": "3",
+                "value": "c"
+            }, {
+                "answer": "Easy and intuitive",
+                "value": "d"
+            }]
         }
     ]
 }
