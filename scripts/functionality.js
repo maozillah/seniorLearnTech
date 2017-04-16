@@ -5,15 +5,11 @@ Handlebars.registerHelper("counter", function(index) {
 
 // modal
 function openModal() {
-    $(".modal_wrapper").css("display", "block");
-    $("#modal").css("display", "block");
-    $(".proj-overlay").css("display", "block");
+    $("#modal").fadeToggle("slow");
 }
 
 function closeModal() {
-    $(".modal_wrapper").css("display", "none");
-    $("#modal").css("display", "none");
-    $(".proj-overlay").css("display", "none");
+    $("#modal").fadeToggle("slow");
 
     $("#survey").css("display", "block");
     $("#results").css("display", "none");
@@ -123,7 +119,8 @@ function processResults(answers) {
 
 
         var html2 = resultsScript(json.results[result]);
-        // var html2 = resultsScript(json);
+
+        $("#results").empty();
         $("#results").append(html2);
     });
 }

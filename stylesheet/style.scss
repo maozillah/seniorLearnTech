@@ -25,7 +25,8 @@ body {
     font-weight: 500;
 }
 
-h1 {
+h1,
+h2 {
     font-family: $slab-serif;
     font-style: normal;
     font-weight: 400;
@@ -53,6 +54,11 @@ h1 {
         padding: 0;
         overflow: auto;
     }
+}
+
+#survey {
+    max-width: 600px;
+    margin: 0 auto 0 auto;
 }
 
 #results {
