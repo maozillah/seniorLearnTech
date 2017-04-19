@@ -292,65 +292,72 @@ p {
   text-align: center;
   margin-bottom: 80px;
   background-color: #F3F3F3;
+  padding: 40px;
+  vertical-align: text-top;
 }
-/* line 300, style.scss */
+/* line 302, style.scss */
 #results #topics .topic {
   width: 25%;
   display: inline-block;
   padding: 0 15px 0 15px;
 }
-/* line 306, style.scss */
+/* line 308, style.scss */
 #results #resources {
   width: 70%;
   margin: 0 auto;
 }
-/* line 309, style.scss */
+/* line 311, style.scss */
 #results #resources .type {
   float: left;
   max-width: 50%;
+  margin-right: 80px;
 }
-/* line 313, style.scss */
+/* line 316, style.scss */
+#results #resources h1 {
+  margin-top: 1.5em;
+}
+/* line 319, style.scss */
 #results #resources .location {
-  float: right;
+  float: left;
   max-width: 30%;
 }
-/* line 317, style.scss */
+/* line 323, style.scss */
 #results #resources img {
   float: left;
   max-width: 100px;
   padding-right: 40px;
   margin-top: 30px;
 }
-/* line 323, style.scss */
+/* line 329, style.scss */
 #results #resources a {
   color: #4D4D4D;
   border-bottom: 1px solid #FCC02F;
   text-decoration: none;
 }
-/* line 327, style.scss */
+/* line 333, style.scss */
 #results #resources a:hover {
   color: #FCC02F;
 }
-/* line 332, style.scss */
+/* line 338, style.scss */
 #results p {
   color: #4D4D4D;
 }
 
-/* line 337, style.scss */
+/* line 343, style.scss */
 #resources:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 343, style.scss */
+/* line 349, style.scss */
 .suggestion:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 349, style.scss */
+/* line 355, style.scss */
 #results-wrapper {
   position: absolute;
   width: 100%;

@@ -101,28 +101,45 @@
             }, {
                 "location": "Library",
                 "url": "http://www.google.ca"
+            },{
+                "location": "Apple or Microsoft Stores",
+                "url": ""
             }]
         }, {
-            "ResType": "Group workshops",
-            "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
+            "ResType": "Online Learning Websites",
+            "details": "Given your comfort with technology, websites are a great way to learn about anything at your own pace.",
             "illustration": "http://lorempixel.com/output/cats-q-c-100-100-3.jpg",
             "where": [{
-                "location": "Senior recreation centre",
+                "location": "Lynda (videos)",
                 "url": ""
             }, {
-                "location": "Library",
+                "location": "FutureLearn",
+                "url": "http://www.google.ca"
+            }, {
+                "location": "Techboomers",
+                "url": "http://www.google.ca"
+            }]
+        }, {
+            "ResType": "Continuing Education Courses",
+            "details": "Want something a bit more official? Official classes ensure a structured learning experience.",
+            "illustration": "http://lorempixel.com/output/cats-q-c-100-100-3.jpg",
+            "where": [{
+                "location": "Community college",
+                "url": ""
+            }, {
+                "location": "District school board",
                 "url": "http://www.google.ca"
             }]
         }],
         "topics": [{
             "topic": "Advanced internet usage",
-            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+            "details": "How to use websites such as Google or Youtube efficiently"
         }, {
-            "topic": "Advanced internet usage",
-            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+            "topic": "Device Personalization",
+            "details": "Change the background, colours, and more."
         }, {
-            "topic": "Advanced internet usage",
-            "details": "[language TBD] How to use websites such as Google or Youtube efficiently"
+            "topic": "Navigation Shortcuts",
+            "details": "Want to do things faster? Learn about device shortcuts."
         }]
     }, {
         "stage": "Beyond Intermediate",

@@ -26,47 +26,198 @@
         },
 
         {
-            "question": "How hard is technology to use?",
+            "question": "How useful is technology?",
             "name": "q2",
             "id": "2",
             "quesType": "radio",
             "Category": "attitude",
             "eg": "",
             "answers": [{
-                "answer": "Impossible",
-                "value": "a"
+                "answer": "Not at all",
+                "value": "a",
+                "id": "e"
             }, {
-                "answer": "2",
-                "value": "b"
+                "answer": "Somewhat, useful for a few tasks but it’s not a big deal",
+                "value": "b",
+                "id": "f"
             }, {
-                "answer": "3",
-                "value": "c"
+                "answer": "Moderately, useful for many things in my life",
+                "value": "c",
+                "id": "g"
             }, {
-                "answer": "Easy and intuitive",
-                "value": "d"
+                "answer": "Extremely, can’t imagine living without it",
+                "value": "d",
+                "id": "h"
             }]
-        },
-
-        {
-            "question": "How hard is technology to use?",
+        }, {
+            "question": "In general, how easy or difficult is it to use technology?",
             "name": "q3",
             "id": "3",
             "quesType": "radio",
             "Category": "attitude",
             "eg": "",
             "answers": [{
-                "answer": "Impossible",
-                "value": "a"
+                "answer": "impossible",
+                "value": "a",
+                "id": "d"
             }, {
-                "answer": "2",
-                "value": "b"
+                "answer": "hard/confusing",
+                "value": "b",
+                "id": "d"
             }, {
-                "answer": "3",
-                "value": "c"
+                "answer": "okay",
+                "value": "c",
+                "id": "d"
             }, {
-                "answer": "Easy and intuitive",
-                "value": "d"
+                "answer": "easy",
+                "value": "d",
+                "id": "d"
+            }]
+        }, {
+            "question": "What are you doing with technology?",
+            "name": "q4",
+            "id": "4",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "not doing anything with technology",
+                "value": "a",
+                "id": "d"
+            }, {
+                "answer": "do a few of the same tasks (1-3)",
+                "value": "b",
+                "id": "d"
+            }, {
+                "answer": "do a variety of tasks (10-15)",
+                "value": "c",
+                "id": "d"
+            }, {
+                "answer": "do any tasks (20+)",
+                "value": "d",
+                "id": "d"
+            }]
+        }, {
+            "question": "On average, how much are you able to do with technology?",
+            "name": "q5",
+            "id": "5",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "can’t do anything",
+                "value": "a",
+                "id": "d"
+            }, {
+                "answer": "often get lost or confused (succeed at less than 50% of my goals.)",
+                "value": "b",
+                "id": "d"
+            }, {
+                "answer": "no trouble doing everyday tasks (succeed at more than 50% of my goals)",
+                "value": "c",
+                "id": "d"
+            }, {
+                "answer": "do anything I want (succeed at more than 90% of my goals)",
+                "value": "d",
+                "id": "d"
+            }]
+        }, {
+            "question": "How familiar are you with the physical technology device?",
+            "name": "q6",
+            "id": "6",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "don’t know how to turn the it on or off",
+                "value": "a",
+                "id": "d"
+            }, {
+                "answer": "know how to turn it on/off",
+                "value": "b",
+                "id": "d"
+            }, {
+                "answer": "know what most of the physical buttons do",
+                "value": "c",
+                "id": "d"
+            }, {
+                "answer": "know what all the physical buttons do in different contexts",
+                "value": "d",
+                "id": "d"
+            }]
+        }, {
+            "question": "How capable are you navigating between apps or programs on your device?",
+            "name": "q6",
+            "id": "6",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "I can’t",
+                "value": "a",
+                "id": "d"
+            }, {
+                "answer": "I struggle",
+                "value": "b",
+                "id": "d"
+            }, {
+                "answer": "I can",
+                "value": "c",
+                "id": "d"
+            }, {
+                "answer": "I can easily",
+                "value": "d",
+                "id": "d"
+            }]
+        }, {
+            "question": "What do you do when you get stuck?",
+            "name": "q7",
+            "id": "7",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "find someone to do it for me",
+                "value": "a",
+                "id": "d"
+            }, {
+                "answer": "find someone to teach me ",
+                "value": "b",
+                "id": "d"
+            }, {
+                "answer": "use trial and error to figure it out",
+                "value": "c",
+                "id": "d"
+            }, {
+                "answer": "rarely get stuck, but when I do, I know my options e.g. Google",
+                "value": "d",
+                "id": "d"
+            }]
+        }, {
+            "question": "How do you feel when you use technology?",
+            "name": "q6",
+            "id": "6",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "Very uncomfortable",
+                "value": "a",
+                "id": "d"
+            }, {
+                "answer": "uncomfortable",
+                "value": "b",
+                "id": "d"
+            }, {
+                "answer": "comfortable",
+                "value": "c",
+                "id": "d"
+            }, {
+                "answer": "very comfortable",
+                "value": "d",
+                "id": "d"
             }]
         }
+
     ]
 }

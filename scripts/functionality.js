@@ -46,6 +46,7 @@ $.getJSON(jsonData, function(json) {
     $("#survey").append(html);
 });
 
+//TO DO, broken after styling of radio boxes
 // scroll to next question on click
 $(document).on("change", "input[type=radio]", function(event) {
     var quesNum = $(this).attr('id');
