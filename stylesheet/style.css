@@ -1,16 +1,17 @@
-/* line 18, style.scss */
+/* line 23, style.scss */
 html {
   font-size: 20px;
 }
 
-/* line 22, style.scss */
+/* line 27, style.scss */
 body {
   font-family: "freight-sans-pro", sans-serif;
   font-style: normal;
   font-weight: 500;
+  background-color: #2A2E47;
 }
 
-/* line 28, style.scss */
+/* line 34, style.scss */
 h1,
 h2 {
   font-family: "bree-serif", serif;
@@ -19,7 +20,7 @@ h2 {
   margin-bottom: 0.4em;
 }
 
-/* line 36, style.scss */
+/* line 42, style.scss */
 #preloader {
   position: fixed;
   left: 0;
@@ -32,12 +33,12 @@ h2 {
   background: #fff url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d79bf38627007.5809c7eab2bee.gif) no-repeat center center;
 }
 
-/* line 48, style.scss */
+/* line 54, style.scss */
 .container {
   margin: 0 auto 0 auto;
   max-width: 960px;
 }
-/* line 51, style.scss */
+/* line 57, style.scss */
 .container ul {
   list-style: none;
   margin: 0;
@@ -45,23 +46,87 @@ h2 {
   overflow: auto;
 }
 
-/* line 59, style.scss */
+/* line 65, style.scss */
+.logo {
+  color: #CCCCCC;
+  top: 5vh;
+  left: 12vw;
+  position: absolute;
+}
+
+/* line 72, style.scss */
+#landing {
+  background-image: url("../imgs/landing.png");
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 60%;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+/* line 81, style.scss */
+#landing #landing-copy {
+  right: 12vw;
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
+}
+/* line 87, style.scss */
+#landing h1 {
+  font-size: 2.5em;
+  color: white;
+  max-width: 500px;
+}
+/* line 92, style.scss */
+#landing p {
+  max-width: 450px;
+}
+/* line 95, style.scss */
+#landing button {
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  height: 50px;
+  border: none;
+  width: 100%;
+  background-color: #FCC02F;
+  color: #271F3C;
+  text-transform: uppercase;
+}
+
+/* line 108, style.scss */
+p {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 1.3em;
+  color: #CCCCCC;
+}
+
+/* line 114, style.scss */
+.subtitle {
+  color: #999999;
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+}
+
+/* line 121, style.scss */
 #survey {
   max-width: 600px;
   margin: 0 auto 0 auto;
 }
 
-/* line 64, style.scss */
+/* line 126, style.scss */
 #results {
   display: none;
 }
 
-/* line 69, style.scss */
+/* line 131, style.scss */
 .question {
   margin-bottom: 60px;
 }
 
-/* line 103, style.scss */
+/* line 165, style.scss */
 #modal {
   position: absolute;
   width: 100%;
@@ -69,7 +134,7 @@ h2 {
   top: 0;
   left: 0;
   display: none;
-  background-color: white;
+  background-color: #2A2E47;
   overflow: auto;
   pointer-events: auto;
 }

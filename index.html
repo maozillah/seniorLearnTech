@@ -25,11 +25,19 @@
 <body>
 
     <div id="preloader"></div>
-    <div class="container">
-        <h1>Feeling Overwhelmed by Technology as an Older Adult?</h1>
-        <p>Take the guesswork out of learning about technology. Answer 10 short questions to find the best way for you to learn.</p>
-        <p>It’s free and requires no registration.</p>
-        <button onclick="openModal()">Get Started</button>
+
+    <div id="landing">
+
+        <div class="logo">
+            <h2>Tech+Me</h2>
+        </div>
+
+        <div id="landing-copy">
+            <h1>Feeling Overwhelmed by Technology as an Older Adult?</h1>
+            <p>Take the guesswork out of learning technology. Answer 10 short questions to find the best way for you to learn.</p>
+            <p class="subtitle">It’s free and requires no registration.</p>
+            <button onclick="openModal()">Get Started</button>
+        </div>
 
     </div>
 
@@ -39,10 +47,13 @@
 
     <div id="modal">
 
-        <div class="container">
+        <div class="logo">
+            <h2>Tech+Me |  Quiz</h2>
+        </div>
 
-            <h1>Tech+Me Quiz</h1>
-            <button id="close" onclick="closeModal()">Exit X</button>
+        <button id="close" onclick="closeModal()">Exit X</button>
+
+        <div class="container">
 
             <form id="survey" name="digitalSurvey">
             </form>
