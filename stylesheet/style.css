@@ -283,29 +283,74 @@ p {
   color: white;
   margin-top: 0;
 }
-/* line 293, style.scss */
-#results .type {
-  float: left;
-  max-width: 70%;
+/* line 292, style.scss */
+#results .descr p {
+  color: #CCCCCC;
 }
-/* line 297, style.scss */
-#results .location {
+/* line 296, style.scss */
+#results #topics {
+  text-align: center;
+  margin-bottom: 80px;
+  background-color: #F3F3F3;
+}
+/* line 300, style.scss */
+#results #topics .topic {
+  width: 25%;
+  display: inline-block;
+  padding: 0 15px 0 15px;
+}
+/* line 306, style.scss */
+#results #resources {
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 309, style.scss */
+#results #resources .type {
+  float: left;
+  max-width: 50%;
+}
+/* line 313, style.scss */
+#results #resources .location {
   float: right;
   max-width: 30%;
 }
-/* line 301, style.scss */
-#results .topic {
-  width: 33%;
+/* line 317, style.scss */
+#results #resources img {
+  float: left;
+  max-width: 100px;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+/* line 323, style.scss */
+#results #resources a {
+  color: #4D4D4D;
+  border-bottom: 1px solid #FCC02F;
+  text-decoration: none;
+}
+/* line 327, style.scss */
+#results #resources a:hover {
+  color: #FCC02F;
+}
+/* line 332, style.scss */
+#results p {
+  color: #4D4D4D;
 }
 
-/* line 307, style.scss */
+/* line 337, style.scss */
 #resources:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 313, style.scss */
+/* line 343, style.scss */
+.suggestion:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 349, style.scss */
 #results-wrapper {
   position: absolute;
   width: 100%;
@@ -313,7 +358,7 @@ p {
   top: 0;
   left: 0;
   display: none;
-  background-color: #F3F3F3;
+  background-color: WHITE;
   overflow: auto;
   pointer-events: auto;
 }

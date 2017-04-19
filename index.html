@@ -116,7 +116,7 @@
                     <p>{{description}}</p>
                 </div>
                 <div id="stageContext" style="text-align: center;">
-                <br>
+                    <br>
                     <img src="imgs/stages.jpg" style="max-width: 100%;" alt="">
                 </div>
             </div>
@@ -131,50 +131,56 @@
             </div> -->
 
                 <div id="resources">
-                    <h1>Best Ways for You to Learn</h1> 
-                    {{#each resources}}
+                    <h1>Best Ways for You to Learn</h1> {{#each resources}}
+
+                    <div class="suggestion">
+                        <img src="imgs/placeholder.png" alt="">
 
                         <div class="type">
-                            <img src="{{illustration}}" alt="">
                             <h2>{{ResType}} </h2>
                             <p> {{details}} </p>
                         </div>
 
                         <div class="location">
-                            {{#each where}} 
+                            <h2>Find this at</h2>
 
-                                {{#if url}}
+                            <ul>
+                                {{#each where}} {{#if url}}
 
-                                    <p><a href="{{url}}" target="_blank">{{location}}</a></p>
+                                <li><a href="{{url}}" target="_blank">{{location}}</a></li>
                                 {{else}}
 
-                                    <p>{{location}}</p>
-                                {{/if}} 
+                                <li>{{location}}</li>
+                                {{/if}}
 
-                            {{/each}} 
+                                <!-- {{#unless @last}} <hr> {{/unless}} -->
 
-                            {{#unless @last}}
-                            <hr> {{/unless}} 
+                                {{/each}}
+                            </ul>
 
                         </div>
+
+                    </div>
                     {{/each}}
                 </div>
 
-                <div id="topics">
+            </div>
+        </div>
 
-                    <div class="topic">
-                        <h1>Topics that may Interest You</h1> {{#each topics}}
+        <div id="topics">
+            <h1>Topics that may Interest You</h1> {{#each topics}}
 
-                        <h2>{{topic}}</h2>
-                        <p>{{details}}</p>
-                        {{/each}}
+            <div class="topic">
 
-                    </div>
-                </div>
+                <h2>{{topic}}</h2>
+                <p>{{details}}</p>
 
-                <hr>
+            </div>
+            {{/each}}
 
-                <div id="share">
+        </div>
+
+        <!-- <div id="share">
                     <h1>Share the Quiz</h1>
                     <p>Help other older adults discover the best way to learn to use technology.</p>
                     <ul>
@@ -182,8 +188,7 @@
                         <li>share quiz on facebook</li>
                         <li>share quiz on twitter</li>
                     </ul>
-                </div>
-            </div>
+                </div> -->
     </script>
 
 </body>
