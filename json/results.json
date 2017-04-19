@@ -2,7 +2,7 @@
     "results": [{
         "stage": "Complete Beginner",
         "tagline": "You have a great relationship with technology!",
-        "description": "[language TBD] This is where everyone aspires to be. You've put in the hard work and should be proud of how much you've learned. Most older adults are content here. There's no need to improve unless you're interested.",
+        "description": "You've put in the hard work and should be proud of how much you've achieved. Most older adults are content here.",
         "growth": [{
             "area": "Attitude",
             "details": "[language TBD] You could..."
@@ -10,7 +10,7 @@
         "resources": [{
             "ResType": "Group workshops",
             "details": "Small hands-on classes of less than 10 are a great way to learn about a topic and meet some new people.",
-            "illustration": "http://lorempixel.com/output/cats-q-c-100-100-3.jpg",
+            "illustration": "imgs/intermediate.jpg",
             "where": [
 
                 {
@@ -86,7 +86,7 @@
     }, {
         "stage": "Intermediate",
         "tagline": "You have a great relationship with technology!",
-        "description": "[language TBD] This is where everyone aspires to be. You've put in the hard work and should be proud of how much you've learned. Most older adults are content here. There's no need to improve unless you're interested.",
+        "description": "You've put in the hard work and should be proud of how much you've achieved. Most older adults are content here.",
         "growth": [{
             "area": "Attitude",
             "details": "[language TBD] You could..."

@@ -2,29 +2,33 @@
     "questions": [{
             "question": "What is your past experience with technology?",
             "name": "q1",
-            "id":"1",
+            "id": "1",
             "quesType": "radio",
             "Category": "attitude",
             "eg": "",
             "answers": [{
-                "answer": "I have not used any technology at all",
-                "value": "a"
+                "answer": "Have not used",
+                "value": "a",
+                "id": "a"
             }, {
-                "answer": "I have tried using some basic technology",
-                "value": "b"
+                "answer": "Used occasionally",
+                "value": "b",
+                "id": "b"
             }, {
-                "answer": "I have used technology at work and in my personal life",
-                "value": "c"
+                "answer": "Used regularly",
+                "value": "c",
+                "id": "c"
             }, {
-                "answer": "I have extensive experience working with technology in a technical field",
-                "value": "d"
+                "answer": "Used extensively",
+                "value": "d",
+                "id": "d"
             }]
         },
 
         {
             "question": "How hard is technology to use?",
             "name": "q2",
-            "id":"2",
+            "id": "2",
             "quesType": "radio",
             "Category": "attitude",
             "eg": "",
@@ -46,49 +50,7 @@
         {
             "question": "How hard is technology to use?",
             "name": "q3",
-            "id":"3",
-            "quesType": "radio",
-            "Category": "attitude",
-            "eg": "",
-            "answers": [{
-                "answer": "Impossible",
-                "value": "a"
-            }, {
-                "answer": "2",
-                "value": "b"
-            }, {
-                "answer": "3",
-                "value": "c"
-            }, {
-                "answer": "Easy and intuitive",
-                "value": "d"
-            }]
-        },
-         {
-            "question": "How hard is technology to use?",
-            "name": "q4",
-            "id":"4",
-            "quesType": "radio",
-            "Category": "attitude",
-            "eg": "",
-            "answers": [{
-                "answer": "Impossible",
-                "value": "a"
-            }, {
-                "answer": "2",
-                "value": "b"
-            }, {
-                "answer": "3",
-                "value": "c"
-            }, {
-                "answer": "Easy and intuitive",
-                "value": "d"
-            }]
-        },
-         {
-            "question": "How hard is technology to use?",
-            "name": "q5",
-            "id":"5",
+            "id": "3",
             "quesType": "radio",
             "Category": "attitude",
             "eg": "",

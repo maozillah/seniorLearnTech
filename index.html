@@ -36,111 +36,154 @@
             <h1>Feeling Overwhelmed by Technology as an Older Adult?</h1>
             <p>Take the guesswork out of learning technology. Answer 10 short questions to find the best way for you to learn.</p>
             <p class="subtitle">It’s free and requires no registration.</p>
-            <button onclick="openModal()">Get Started</button>
+            <button class="action-button" onclick="openModal()">Get Started</button>
         </div>
 
     </div>
 
-    <!-- <div class="proj-overlay" onclick="closeModal()"></div> -->
+    <div class="proj-overlay"></div>
 
-    <!-- <div class="modal_wrapper"> -->
+    <div class="modal_wrapper">
+        <!-- TODO icons -->
 
-    <div id="modal">
+        <div id="modal">
+            <div class="logo">
+                <h2>Tech+Me |  Quiz</h2>
+            </div>
 
-        <div class="logo">
-            <h2>Tech+Me |  Quiz</h2>
-        </div>
-
-        <button id="close" onclick="closeModal()">Exit X</button>
-
-        <div class="container">
+            <button id="close" onclick="closeModal()">Exit X</button>
 
             <form id="survey" name="digitalSurvey">
             </form>
 
-            <section id="results">
-            </section>
         </div>
+
     </div>
 
-    <!-- </div> -->
+    <div id="results-wrapper">
+
+        <div class="green-section">
+            <div class="logo">
+                <h2>Tech+Me |  Results</h2>
+            </div>
+
+            <button id="close" onclick="closeResults()">Exit X</button>
+        </div>
+
+        <section id="results">
+        </section>
+
+    </div>
 
     <script id="survey-ques" type="text/x-handlebars-template">
+
         {{#each questions}}
 
         <div id="{{counter @index}}" class="question">
-            <h1>{{counter @index}}. {{question}}</h1> {{#each answers}}
-            <label>
-                <input type="{{../quesType}}" name="{{../name}}" id="{{../id}}" value="{{value}}"> {{answer}}
-                <br>
-            </label>
-            {{/each}}
+            <h1>{{counter @index}}. {{question}}</h1>
+
+            <ul>
+
+                {{#each answers}}
+                <li>
+                    <input type="{{../quesType}}" name="{{../name}}" id="{{id}}" value="{{value}}">
+                    <label for="{{id}}">{{answer}}</label>
+
+                    <div class="check"></div>
+                </li>
+                {{/each}}
+
+            </ul>
 
         </div>
 
         {{/each}}
 
-        <hr/>
-        <input type="submit" value="Submit">
+        <button type="submit" class="action-button" value="Submit">Submit</button>
+        <br>
+        <br>
     </script>
     <script src="scripts/functionality.js"></script>
 
     <script id="survey-results" type="text/x-handlebars-template">
 
-        <div id="stage">
-            <h1>TEST/REMOVE: {{stage}}</h1>
-            <h1>{{tagline}}</h1>
-            <p>{{description}}</p>
+        <div class="container">
+            <div id="stage">
+                <img src="imgs/intermediate.jpg" alt="">
 
-            <div id="stageContext">
-                circles
+                <div class="descr">
+                    <h1>{{tagline}}</h1>
+                    <p>{{description}}</p>
+                </div>
+                <div id="stageContext" style="text-align: center;">
+                <br>
+                    <img src="imgs/stages.jpg" style="max-width: 100%;" alt="">
+                </div>
             </div>
-        </div>
 
-        <div id="learning">
+            <div id="learning">
 
-            <!--  <div id="growth">
+                <!--  <div id="growth">
                 <h1>Areas of Growth</h1> {{#each growth}}
                 <h2>{{area}} </h2>
                 <p> {{details}} </p>
                 {{/each}}
             </div> -->
 
-            <div id="resources">
-                <h1>Best Ways for You to Learn</h1> {{#each resources}}
-                <img src="{{illustration}}" alt="">
-                <h2>{{ResType}} </h2>
-                <p> {{details}} </p>
+                <div id="resources">
+                    <h1>Best Ways for You to Learn</h1> 
+                    {{#each resources}}
 
-                {{#each where}} {{#if url}}
-                <p><a href="{{url}}" target="_blank">{{location}}</a></p>
-                {{else}}
-                <p>{{location}}</p>
-                {{/if}} {{/each}} {{#unless @last}}
-                <hr> {{/unless}} {{/each}}
+                        <div class="type">
+                            <img src="{{illustration}}" alt="">
+                            <h2>{{ResType}} </h2>
+                            <p> {{details}} </p>
+                        </div>
+
+                        <div class="location">
+                            {{#each where}} 
+
+                                {{#if url}}
+
+                                    <p><a href="{{url}}" target="_blank">{{location}}</a></p>
+                                {{else}}
+
+                                    <p>{{location}}</p>
+                                {{/if}} 
+
+                            {{/each}} 
+
+                            {{#unless @last}}
+                            <hr> {{/unless}} 
+
+                        </div>
+                    {{/each}}
+                </div>
+
+                <div id="topics">
+
+                    <div class="topic">
+                        <h1>Topics that may Interest You</h1> {{#each topics}}
+
+                        <h2>{{topic}}</h2>
+                        <p>{{details}}</p>
+                        {{/each}}
+
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="share">
+                    <h1>Share the Quiz</h1>
+                    <p>Help other older adults discover the best way to learn to use technology.</p>
+                    <ul>
+                        <li>email the Quiz to a friend</li>
+                        <li>share quiz on facebook</li>
+                        <li>share quiz on twitter</li>
+                    </ul>
+                </div>
             </div>
-
-            <div id="topics">
-                <h1>Topics that may Interest You</h1> {{#each topics}}
-
-                <h2>{{topic}}</h2>
-                <p>{{details}}</p>
-                {{/each}}
-            </div>
-        </div>
-
-        <hr>
-
-        <div id="share">
-            <h1>Share the Quiz</h1>
-            <p>Help other older adults discover the best way to learn to use technology.</p>
-            <ul>
-                <li>email the Quiz to a friend</li>
-                <li>share quiz on facebook</li>
-                <li>share quiz on twitter</li>
-            </ul>
-        </div>
-
     </script>
 
 </body>

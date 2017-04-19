@@ -5,15 +5,27 @@ Handlebars.registerHelper("counter", function(index) {
 
 // modal
 function openModal() {
+    $(".modal_wrapper").fadeToggle("slow");
     $("#modal").fadeToggle("slow");
+    $(".proj-overlay").fadeToggle("slow");
+    toggleResults();
 }
 
 function closeModal() {
+    $(".modal_wrapper").fadeToggle("slow");
     $("#modal").fadeToggle("slow");
+    $(".proj-overlay").fadeToggle("slow");
+}
 
+function closeResults() {
+    $("#results-wrapper").fadeToggle("slow");
+}
+
+function toggleResults() {
     $("#survey").css("display", "block");
     $("#results").css("display", "none");
 }
+
 $(document).keyup(function(e) {
     if (e.keyCode == 27) {
         closeModal();
@@ -58,6 +70,7 @@ $("#survey").on("submit", function(event) {
     // test variables
     var answers = [{ "name": "q1", "value": "c" }, { "name": "q2", "value": "a" }, { "name": "q3", "value": "c" }];
 
+    closeModal();
     // console.log(answers);
     processResults(answers);
 
@@ -71,7 +84,8 @@ function loader() {
 
             $("#survey").css("display", "none");
             $("#results").css("display", "block");
-            $( "#modal" ).scrollTop(0);
+            $("#results-wrapper").css("display", "block");
+            $("#modal").scrollTop(0);
         }, 3000);
     });
 }
