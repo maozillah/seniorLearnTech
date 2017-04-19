@@ -59,19 +59,19 @@
             "answers": [{
                 "answer": "impossible",
                 "value": "a",
-                "id": "d"
+                "id": "CTuQfFVtEEFKrMkd"
             }, {
                 "answer": "hard/confusing",
                 "value": "b",
-                "id": "d"
+                "id": "MwkVjWVkSBRhJNhggkMud"
             }, {
                 "answer": "okay",
                 "value": "c",
-                "id": "d"
+                "id": "GjbvQDhPwKd"
             }, {
                 "answer": "easy",
                 "value": "d",
-                "id": "d"
+                "id": "zrQRZgNkd"
             }]
         }, {
             "question": "What are you doing with technology?",
@@ -83,19 +83,19 @@
             "answers": [{
                 "answer": "not doing anything with technology",
                 "value": "a",
-                "id": "d"
+                "id": "ZGQHVgIAPBrCvYmQV"
             }, {
                 "answer": "do a few of the same tasks (1-3)",
                 "value": "b",
-                "id": "d"
+                "id": "GyJTNOvXv"
             }, {
                 "answer": "do a variety of tasks (10-15)",
                 "value": "c",
-                "id": "d"
+                "id": "quqiNxyPGfrvvaMYRDyg"
             }, {
                 "answer": "do any tasks (20+)",
                 "value": "d",
-                "id": "d"
+                "id": "QKVMZEu"
             }]
         }, {
             "question": "On average, how much are you able to do with technology?",
@@ -107,19 +107,19 @@
             "answers": [{
                 "answer": "can’t do anything",
                 "value": "a",
-                "id": "d"
+                "id": "OKkCuANQaX"
             }, {
                 "answer": "often get lost or confused (succeed at less than 50% of my goals.)",
                 "value": "b",
-                "id": "d"
+                "id": "MIMbjzeJcrD"
             }, {
                 "answer": "no trouble doing everyday tasks (succeed at more than 50% of my goals)",
                 "value": "c",
-                "id": "d"
+                "id": "IQjJNXRTORlUuPvRlumy"
             }, {
                 "answer": "do anything I want (succeed at more than 90% of my goals)",
                 "value": "d",
-                "id": "d"
+                "id": "Tgeed"
             }]
         }, {
             "question": "How familiar are you with the physical technology device?",
@@ -131,19 +131,19 @@
             "answers": [{
                 "answer": "don’t know how to turn the it on or off",
                 "value": "a",
-                "id": "d"
+                "id": "sBJe"
             }, {
                 "answer": "know how to turn it on/off",
                 "value": "b",
-                "id": "d"
+                "id": "aQIHUYbPleuACXr"
             }, {
                 "answer": "know what most of the physical buttons do",
                 "value": "c",
-                "id": "d"
+                "id": "fFlVXMhKeIwxakLnTY"
             }, {
                 "answer": "know what all the physical buttons do in different contexts",
                 "value": "d",
-                "id": "d"
+                "id": "eyWfyWTHyU"
             }]
         }, {
             "question": "How capable are you navigating between apps or programs on your device?",
@@ -155,19 +155,19 @@
             "answers": [{
                 "answer": "I can’t",
                 "value": "a",
-                "id": "d"
+                "id": "qngOLX"
             }, {
                 "answer": "I struggle",
                 "value": "b",
-                "id": "d"
+                "id": "PlBbLq"
             }, {
                 "answer": "I can",
                 "value": "c",
-                "id": "d"
+                "id": "IhxAMFpleKhXuFiKHQ"
             }, {
                 "answer": "I can easily",
                 "value": "d",
-                "id": "d"
+                "id": "NzVONEHedBmlVHqMf"
             }]
         }, {
             "question": "What do you do when you get stuck?",
@@ -179,19 +179,19 @@
             "answers": [{
                 "answer": "find someone to do it for me",
                 "value": "a",
-                "id": "d"
+                "id": "NWqQWRkWeOufioxk"
             }, {
                 "answer": "find someone to teach me ",
                 "value": "b",
-                "id": "d"
+                "id": "umYzHNrhyIDEpgSF"
             }, {
                 "answer": "use trial and error to figure it out",
                 "value": "c",
-                "id": "d"
+                "id": "Vfi"
             }, {
                 "answer": "rarely get stuck, but when I do, I know my options e.g. Google",
                 "value": "d",
-                "id": "d"
+                "id": "qWYNiE"
             }]
         }, {
             "question": "How do you feel when you use technology?",
@@ -203,19 +203,19 @@
             "answers": [{
                 "answer": "Very uncomfortable",
                 "value": "a",
-                "id": "d"
+                "id": "WTtUZcAoFMB"
             }, {
                 "answer": "uncomfortable",
                 "value": "b",
-                "id": "d"
+                "id": "eHNjPtOro"
             }, {
                 "answer": "comfortable",
                 "value": "c",
-                "id": "d"
+                "id": "Rdw"
             }, {
                 "answer": "very comfortable",
                 "value": "d",
-                "id": "d"
+                "id": "LfeEFbxFwkKHTmdPEA"
             }]
         }
 
