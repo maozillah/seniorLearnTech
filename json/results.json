@@ -132,13 +132,13 @@
             }]
         }],
         "topics": [{
-            "topic": "Advanced internet usage",
+            "topic": "▲ Advanced internet usage",
             "details": "How to use websites such as Google or Youtube efficiently"
         }, {
-            "topic": "Device Personalization",
+            "topic": "▲ Device Personalization",
             "details": "Change the background, colours, and more."
         }, {
-            "topic": "Navigation Shortcuts",
+            "topic": "▲ Navigation Shortcuts",
             "details": "Want to do things faster? Learn about device shortcuts."
         }]
     }, {
