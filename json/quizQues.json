@@ -1,5 +1,26 @@
 {
     "questions": [{
+            "question": "What technology are you familiar with?",
+            "name": "q10",
+            "id": "10",
+            "quesType": "radio",
+            "Category": "attitude",
+            "eg": "",
+            "answers": [{
+                "answer": "Computers",
+                "value": "a",
+                "id": "NkKRnkwUxluRtYYCa"
+            }, {
+                "answer": "Touchscreen devices",
+                "value": "b",
+                "id": "hQxCHpKOOb"
+            }, {
+                "answer": "Not familiar with technology",
+                "value": "c",
+                "id": "ImJqgc"
+            }]
+        },
+{
             "question": "What is your past experience with technology?",
             "name": "q1",
             "id": "1",
